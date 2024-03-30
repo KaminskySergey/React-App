@@ -43,7 +43,6 @@ export default function TodoCard({ todo}: ITodoCard) {
         const updatedTodo = { ...todo, category: value };
         dispatch(taskUpdate(updatedTodo))
     };
-
    
     return <>
     <li onClick={handleOpenTodoDetails}  className="flex flex-col justify-between h-52 hover:border-yellow-500 transition-all	  border-solid border-2 px-2.5 py-3 rounded-lg">
@@ -76,7 +75,7 @@ export default function TodoCard({ todo}: ITodoCard) {
                     className={`w-full p-2 border ${todo.category ? 'border-gray-300' : 'border-red-500'} h-[45px] rounded-md`}
                     onClick={(event) => event.stopPropagation()}
                 >
-                    <option value="">Select a category</option>
+                    <option value={todo.category}>Move to:</option>
                     {allStatus.map(el => (
                         <option key={el.id} value={el.name}>{el.name}</option>
                     ))}
