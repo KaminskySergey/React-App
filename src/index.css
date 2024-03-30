@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.activity {
+    display: flex;
+    overflow-y: auto;
+    
+      }
+      .activity::-webkit-scrollbar {
+        width: 10px; 
+        height: 10px; 
+      }
+      
+     
+      .activity::-webkit-scrollbar-thumb {
+        background-color: #ccc; 
+        border-radius: 5px; 
+      }
+      

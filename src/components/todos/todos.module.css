@@ -1,0 +1,46 @@
+.icon-button {
+    background: none;
+    border: none;
+  }
+  
+  .icon-button svg {
+    fill: black; 
+  }
+
+
+  .todo {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-top: 32px;
+    
+      }
+      .todo::-webkit-scrollbar {
+        width: 10px; /* Ширина вертикального скролла */
+        height: 10px; /* Высота горизонтального скролла */
+      }
+      
+      /* Стили для вертикального скролла */
+      .todo::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* Цвет полосы скролла */
+        border-radius: 5px; /* Радиус скругления углов полосы скролла */
+      }
+      
+      /* Стили для горизонтального скролла */
+      .todo::-webkit-scrollbar-thumb:horizontal {
+        background-color: #ccc; /* Цвет полосы скролла */
+        border-radius: 5px; /* Радиус скругления углов полосы скролла */
+      }
+      
+      /* Стили для трека (фоновой части) вертикального скролла */
+      .todo::-webkit-scrollbar-track {
+        background-color: #f0f0f0; /* Цвет фоновой части скролла */
+        border-radius: 5px; /* Радиус скругления углов фоновой части скролла */
+      }
+      
+      /* Стили для трека (фоновой части) горизонтального скролла */
+      .todo::-webkit-scrollbar-track:horizontal {
+        background-color: #f0f0f0; /* Цвет фоновой части скролла */
+        border-radius: 5px; /* Радиус скругления углов фоновой части скролла */
+      }
